@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    xmlns:tools="http://schemas.android.com/tools"
+
+
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/pizza_img"
+        android:layout_width="112dp"
+        android:layout_height="112dp"
+        tools:src="@drawable/baseline_local_pizza_24" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:layout_marginStart="12dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/pizza_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            tools:text="Pizza" />
+
+        <TextView
+            android:id="@+id/pizza_description"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:textSize="16sp"
+            tools:text="Pizza dscription here" />
+
+        <TextView
+            android:id="@+id/pizza_cost"
+            android:layout_width="165dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:background="@drawable/backgroung_cost"
+            android:padding="4dp"
+            android:paddingLeft="8dp"
+            android:textColor="@color/orange"
+            android:textSize="24sp"
+            tools:text="ot 2000 KZT" />
+
+    </LinearLayout>
+
+</LinearLayout>
