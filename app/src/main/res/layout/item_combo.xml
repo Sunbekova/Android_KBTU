@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="320dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_gravity="center"
+        app:cardCornerRadius="24dp"
+        app:cardElevation="8dp">
+
+
+
+        <ImageView
+            android:id="@+id/pizza_img"
+            android:layout_width="240dp"
+            android:layout_height="240dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="24dp"
+            android:scaleType="centerCrop"
+            tools:src="@drawable/baseline_local_pizza_24" />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/attention_mark"
+            android:gravity="center"
+            android:text="attention_mark"
+            android:layout_marginTop="16dp"
+            android:paddingHorizontal="16dp"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/background_combo_person"
+            android:textColor="@color/white"/>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="12dp"
+            android:layout_marginTop="240dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/pizza_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:textSize="30sp"
+                android:textStyle="bold"
+                tools:text="Combo" />
+
+            <TextView
+                android:id="@+id/pizza_description"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:textSize="16sp"
+                tools:text="Pizza dscription here" />
+
+            <TextView
+                android:id="@+id/pizza_cost"
+                android:layout_width="170dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:layout_marginLeft="104dp"
+                android:background="@drawable/backgroung_cost"
+                android:padding="4dp"
+                android:paddingLeft="8dp"
+                android:textColor="@color/orange"
+                android:textSize="24sp"
+                android:gravity="center"
+                tools:text="ot 2000 KZT" />
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>
